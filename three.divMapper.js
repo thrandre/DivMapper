@@ -124,7 +124,9 @@ THREE.DivMapper = function( camera, container ) {
 	};
 	
 	var update = function() {
-		setup();
+		setWrapperStyle();
+		setCameraStyle();
+		
 		for( var i in mappings ) {
 			setObjectStyle( mappings[ i ].div, mappings[ i ].obj );
 		}
